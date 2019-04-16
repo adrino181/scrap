@@ -1,0 +1,32 @@
+  {
+   "manifest_version": 2,
+   "name": "Scrap",
+   "version": "1.0",
+   "description":"Scrap data from webpages",
+   "icons":{
+   	 "128":"icons/128spider.png",
+   	 "48":"icons/48spider.png",
+     "16":"icons/16spider.png"
+   },
+
+   "page_action":{
+     "default_icon": "icons/16spider.png",
+     "default_title": "Scrap data from page"    
+   },
+
+   "background":{
+   	"scripts": ["background.js"],
+   	"persistent": false
+   },
+
+   "content_scripts": [
+    	{
+        "matches": ["https://*/*","http://*/*"],
+        "run_at": "document_end",
+    	"js": ["content.js","jquery-3.3.1.min.js"],
+    	"css":["mystyle.css"] 
+        }],
+
+   "permissions": ["tabs","https://*/*","http://*/*"]
+
+  }
