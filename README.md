@@ -1,3 +1,3 @@
 # scrap
-scrap data from websites through chrome extension
-currently in development phase
+scrap data from websites through chromee extension by selecting elements
+
