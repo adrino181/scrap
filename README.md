@@ -1,3 +1,3 @@
 # scrap
-scrap data from websites through chrome extension by selecting elements
+scrap data and organize data using chrom extension and selection api
 
